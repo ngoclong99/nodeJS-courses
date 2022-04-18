@@ -3,7 +3,7 @@ const router = express.Router()
 const siteController = require('../app/controllers/SiteController')
 
 // Cấu hình
-router.use('/search', siteController.search)
-router.use('/', siteController.home)
+router.get('/search', siteController.search)
+router.get('/', siteController.home)
 
 module.exports = router
